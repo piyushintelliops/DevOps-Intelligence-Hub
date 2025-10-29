@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Piyush Gupta | AI + ServiceNow Engineer</title>
+  <meta name="description" content="AI + ServiceNow + Excel automation portfolio of Piyush Gupta." />
   <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa;}
-    header {background:#0d1117; color:#fff; padding:2rem; text-align:center;}
-    section {padding:2rem 4rem;}
-    h2 {color:#0d1117;}
-    .card {background:#fff; padding:1rem; margin:1rem 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    :root { --bg:#0d1117; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#3b82f6; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    header{padding:64px 24px;text-align:center;border-bottom:1px solid #1f2937}
+    header h1{margin:0;font-size:42px} header p{margin:8px 0 0;color:var(--muted)}
+    main{max-width:980px;margin:0 auto;padding:32px 24px}
+    h2{margin:32px 0 16px;font-size:24px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);padding:18px;border:1px solid #1f2937;border-radius:14px}
+    .pill{display:inline-block;background:#111b2e;border:1px solid #1f2937;color:var(--muted);padding:4px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:12px}
+    a{color:var(--accent);text-decoration:none}
+    footer{padding:32px 24px;text-align:center;color:var(--muted);border-top:1px solid #1f2937}
+    .kpis{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi{flex:1;min-width:180px;background:#0f172a;border:1px solid #1f2937;border-radius:12px;padding:16px}
   </style>
 </head>
 <body>
   <header>
     <h1>Piyush Gupta</h1>
-    <p>Engineer | AI + ServiceNow Developer | Excel + Automation Specialist</p>
+    <p>Engineer • AI + ServiceNow • Excel Automation</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Engineer passionate about automation, AI integration, and workflow optimization. Skilled in ServiceNow, Excel, Power BI, and GPT-based automation.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <!-- Paste Prompt A output below -->
+        <p><em>ABOUT_ME_PLACEHOLDER</em></p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>AI Incident Analyzer (ServiceNow + Predictive Intelligence)</h3>
-      <p>Automated assignment prediction using AI models.</p>
-    </div>
-    <div class="card">
-      <h3>Excel + GPT Dashboard (AI + Automation)</h3>
-      <p>Excel dashboard integrated with GPT for smart insights.</p>
-    </div>
-    <div class="card">
-      <h3>IT Asset Tracker (Power BI + Excel)</h3>
-      <p>Real-time asset tracking with automated reporting.</p>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="pill">ServiceNow (Zurich)</span>
+        <span class="pill">Flow Designer</span>
+        <span class="pill">Predictive Intelligence</span>
+        <span class="pill">GPT Automation</span>
+        <span class="pill">Excel</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Git & GitHub</span>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: yourname@gmail.com | <a href="https://linkedin.com/in/yourname">LinkedIn</a></p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AI Incident Analyzer (ServiceNow)</h3>
+          <!-- Paste one project blurb from Prompt B -->
+          <p>PROJECT_1_PLACEHOLDER</p>
+        </div>
+        <div class="card">
+          <h3>Excel + GPT Workshop Dashboard</h3>
+          <p>PROJECT_2_PLACEHOLDER</p>
+        </div>
+        <div class="card">
+          <h3>IT Asset Tracker</h3>
+          <p>PROJECT_3_PLACEHOLDER</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs">
+      <h2>Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>Excel + GPT + AI Workshop (Advanced Excel Certified)</li>
+          <li>ServiceNow Developer PDI (Zurich)</li>
+          <li>Power BI Essentials</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:yourname@gmail.com">yourname@gmail.com</a> &nbsp;|&nbsp;
+           LinkedIn: <a href="https://linkedin.com/in/yourname">linkedin.com/in/yourname</a> &nbsp;|&nbsp;
+           GitHub: <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Piyush Gupta — AI • ServiceNow • Automation</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
